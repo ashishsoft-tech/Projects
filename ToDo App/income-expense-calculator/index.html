@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ToDo App</title>
+    
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Income Expense Calculator</h1>
+
+        <div class="summary">
+            <div class="card income-card">
+                <h3>Total Income</h3>
+                <p id="total-income">₹0</p>
+            </div>
+            <div class="card expense-card">
+                <h3>Total Expense</h3>
+                <p id="total-expense">₹0</p>
+            </div>
+            <div class="card balance-card">
+                <h3>Net Balance</h3>
+                <p id="net-balance">₹0</p>
+            </div>
+        </div>
+
+
+        <div class="form-section">
+            <h2>Add Transaction</h2>
+
+            <form action="" id="transaction-form">
+                <input type="text" id="description" placeholder="Enter Description" required>
+                <input type="number" id="amount" placeholder="Enter Amount" required>
+                <select id="type">
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+
+                <div class="form-buttons">
+                    <button type="submit" id="submit-btn">Add</button>
+                    <button type="button" id="reset-btn">Reset</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="filter-section">
+            <h3>Filter Transaction</h3>
+
+            <label>
+                <input type="radio" name="filter" value="all" checked>All
+            </label>
+            <label>
+                <input type="radio" name="filter" value="income" checked>Income
+            </label>
+            <label>
+                <input type="radio" name="filter" value="expense" checked>Expense
+            </label>
+        </div>
+
+        <div class="transaction-section">
+            <h2>Transaction List</h2>
+            <ul id="transaction-list">
+                Dynamic Data
+            </ul>
+        </div>
+
+        
+    </div>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
